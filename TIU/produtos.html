@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketplace | TIU</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="products">
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav"><a href="index.html">Início</a><a href="profissionais.html">Profissionais</a><a class="active" href="produtos.html">Marketplace</a><a href="index.html#como-funciona">Como funciona</a><span class="nav-divider"></span><a class="nav-login" href="login.html">Entrar</a><a class="nav-signup btn btn-primary btn-sm" href="cadastro.html">Criar conta</a></nav>
+</div></header>
+
+<main>
+  <section class="page-hero"><div class="container"><span class="eyebrow">MARKETPLACE TIU</span><h1>Produtos para todos os momentos.</h1><p>Encontre itens novos, usados, seminovos, vintage e restaurados.</p><div class="page-hero-actions"><a class="btn btn-primary" href="adicionar-produto.html">＋ Vender um produto</a></div></div></section>
+  <section class="section listing-section"><div class="container">
+    <div class="filters-bar">
+      <div class="search-field"><span>⌕</span><input id="product-search" type="search" placeholder="Buscar produto, categoria ou vendedor..."></div>
+      <select id="product-category" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option><option>Celulares</option><option>Notebooks</option><option>Ferramentas</option><option>Câmeras</option><option>Consoles</option><option>Móveis</option><option>Vintage</option></select>
+      <select id="product-condition" aria-label="Filtrar por condição"><option value="">Todas as condições</option><option>Novo</option><option>Usado</option><option>Seminovo</option><option>Vintage</option><option>Restaurado</option></select>
+    </div>
+    <div class="results-head"><strong id="product-count">0 produtos</strong><span>Resultados demonstrativos</span></div>
+    <div class="product-grid" id="products-list"></div>
+    <div class="empty-state hidden" id="products-empty"><div>⌕</div><h3>Nenhum produto encontrado</h3><p>Tente outra busca ou remova os filtros.</p></div>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand brand-footer" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a><p>Conectando pessoas a serviços e produtos.</p></div><div><strong>Explorar</strong><a href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a></div><div><strong>Conta</strong><a href="login.html">Entrar</a><a href="cadastro.html">Criar conta</a></div></div><div class="container footer-bottom"><span>© 2026 TIU — Projeto acadêmico/TCC.</span><span>Autenticação demonstrativa, sem backend.</span></div></footer>
+<script src="js/app.js"></script></body></html>

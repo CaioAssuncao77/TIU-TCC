@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profissionais | TIU</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="professionals">
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav"><a href="index.html">Início</a><a class="active" href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a><a href="index.html#como-funciona">Como funciona</a><span class="nav-divider"></span><a class="nav-login" href="login.html">Entrar</a><a class="nav-signup btn btn-primary btn-sm" href="cadastro.html">Criar conta</a></nav>
+</div></header>
+
+<main>
+  <section class="page-hero"><div class="container"><span class="eyebrow">SERVIÇOS</span><h1>Encontre o profissional certo.</h1><p>Pesquise por nome ou especialidade e filtre as opções disponíveis.</p></div></section>
+  <section class="section listing-section"><div class="container">
+    <div class="filters-bar">
+      <div class="search-field"><span>⌕</span><input id="professional-search" type="search" placeholder="Buscar profissional ou especialidade..."></div>
+      <select id="professional-category" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option><option>Encanador</option><option>Eletricista</option><option>Diarista</option><option>Montador de móveis</option><option>Técnico de informática</option><option>Mecânico</option></select>
+    </div>
+    <div class="results-head"><strong id="professional-count">0 profissionais</strong><span>Resultados demonstrativos</span></div>
+    <div class="card-grid" id="professionals-list"></div>
+    <div class="empty-state hidden" id="professionals-empty"><div>⌕</div><h3>Nenhum profissional encontrado</h3><p>Tente outro termo ou remova o filtro de categoria.</p></div>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><a class="brand brand-footer" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a><p>Conectando pessoas a serviços e produtos.</p></div><div><strong>Explorar</strong><a href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a></div><div><strong>Conta</strong><a href="login.html">Entrar</a><a href="cadastro.html">Criar conta</a></div></div><div class="container footer-bottom"><span>© 2026 TIU — Projeto acadêmico/TCC.</span><span>Autenticação demonstrativa, sem backend.</span></div></footer>
+<script src="js/app.js"></script></body></html>
