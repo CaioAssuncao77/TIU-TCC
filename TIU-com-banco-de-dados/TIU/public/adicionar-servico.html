@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anunciar serviço | TIU</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="add-service">
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav"><a href="index.html">Início</a><a href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a><a href="index.html#como-funciona">Como funciona</a><span class="nav-divider"></span><a class="nav-login" href="login.html">Entrar</a><a class="nav-signup btn btn-primary btn-sm" href="cadastro.html">Criar conta</a></nav>
+</div></header>
+<main class="auth-page product-create-page"><div class="auth-card auth-card-wide product-form-card">
+  <div class="auth-heading"><span class="eyebrow">SERVIÇOS TIU</span><h1>Anuncie seu trabalho</h1><p>Apresente um serviço que você oferece e deixe clientes encontrarem você pelo TIU.</p></div>
+  <form id="service-form" novalidate>
+    <div class="form-row"><div class="form-field"><label for="service-name">Nome do serviço *</label><input id="service-name" required placeholder="Ex.: Instalação elétrica residencial"></div><div class="form-field"><label for="service-price">Preço (R$) *</label><input id="service-price" type="number" min="0" step="0.01" required placeholder="0,00"></div></div>
+    <div class="form-row"><div class="form-field"><label for="service-category">Categoria *</label><select id="service-category" required><option value="">Selecione</option><option>Elétrica</option><option>Hidráulica</option><option>Limpeza</option><option>Manutenção</option><option>Informática</option><option>Montagem</option><option>Pintura</option><option>Design</option><option>Aulas</option><option>Outros</option></select></div><div class="form-field"><label for="service-price-type">Como informar o preço?</label><select id="service-price-type"><option value="fixo">Preço fixo</option><option value="a partir">A partir de</option></select></div></div>
+    <div class="form-row"><div class="form-field"><label for="service-owner">Profissional</label><input id="service-owner" readonly></div><div class="form-field"><label for="service-location">Localização *</label><input id="service-location" required placeholder="Cidade / região"></div></div>
+    <div class="form-field"><label for="service-description">Descrição do serviço *</label><textarea id="service-description" rows="6" required placeholder="Explique o que você faz, o que está incluso, atendimento e diferenciais..."></textarea></div>
+    <button class="btn btn-primary btn-block" type="submit">Publicar meu serviço</button>
+    <div class="form-message" id="service-form-message" role="alert"></div>
+  </form>
+  <p class="security-note">⚠ Os serviços são armazenados no <code>localStorage</code> deste navegador para fins de demonstração acadêmica.</p>
+</div></main>
+<script src="js/app.js"></script></body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro | TIU</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="signup">
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav"><a href="index.html">Início</a><a href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a><span class="nav-divider"></span><a href="login.html">Entrar</a><a class="active btn btn-primary btn-sm" href="cadastro.html">Criar conta</a></nav>
+</div></header>
+
+<main class="auth-page"><div class="auth-card auth-card-wide">
+  <div class="auth-heading"><span class="eyebrow">FAÇA PARTE</span><h1>Crie sua conta no TIU</h1><p>Escolha como você quer participar da plataforma.</p></div>
+  <div class="account-type-grid" role="group" aria-label="Tipo de conta">
+    <button type="button" class="account-type active" data-type="cliente"><span>◉</span><strong>Cliente</strong><small>Encontrar serviços e produtos.</small></button>
+    <button type="button" class="account-type" data-type="profissional"><span>⚒</span><strong>Profissional</strong><small>Divulgar serviços e encontrar oportunidades.</small></button>
+  </div>
+  <form id="signup-form" novalidate>
+    <input type="hidden" id="signup-type" value="cliente">
+    <div class="form-row"><div class="form-field"><label for="signup-name">Nome</label><input id="signup-name" required placeholder="Seu nome"></div><div class="form-field"><label for="signup-location">Localização</label><input id="signup-location" required placeholder="Cidade / região"></div></div>
+    <div class="form-row"><div class="form-field"><label for="signup-email">E-mail</label><input id="signup-email" type="email" required placeholder="voce@email.com"></div><div class="form-field"><label for="signup-password">Senha</label><input id="signup-password" type="password" minlength="6" required placeholder="Mínimo de 6 caracteres"></div></div>
+    <div id="professional-fields" class="professional-fields hidden">
+      <div class="form-row"><div class="form-field"><label for="signup-profession">Profissão principal</label><select id="signup-profession"><option value="">Selecione sua profissão</option><option>Encanador</option><option>Eletricista</option><option>Diarista</option><option>Montador de móveis</option><option>Técnico de informática</option><option>Mecânico</option><option>Pintor(a)</option><option>Pedreiro(a)</option><option>Jardineiro(a)</option><option>Designer</option><option>Fotógrafo(a)</option><option>Professor(a) particular</option><option>Manicure / Cabeleireiro(a)</option><option>Outra profissão</option></select></div><div class="form-field"><label for="signup-area">Área de atuação principal</label><input id="signup-area" placeholder="Ex.: Instalações residenciais"></div></div>
+      <fieldset class="form-field professional-categories"><legend>Outras áreas em que trabalha</legend><p class="muted">Selecione todas as categorias de serviços que você oferece.</p><div class="category-checkbox-grid" id="signup-categories"><label><input type="checkbox" value="Encanador"> Encanamento</label><label><input type="checkbox" value="Eletricista"> Elétrica</label><label><input type="checkbox" value="Diarista"> Limpeza e diarista</label><label><input type="checkbox" value="Montador de móveis"> Montagem de móveis</label><label><input type="checkbox" value="Técnico de informática"> Informática e tecnologia</label><label><input type="checkbox" value="Mecânico"> Mecânica automotiva</label><label><input type="checkbox" value="Pintor(a)"> Pintura</label><label><input type="checkbox" value="Pedreiro(a)"> Construção e reformas</label><label><input type="checkbox" value="Jardineiro(a)"> Jardinagem</label><label><input type="checkbox" value="Designer"> Design</label><label><input type="checkbox" value="Fotógrafo(a)"> Fotografia</label><label><input type="checkbox" value="Professor(a) particular"> Aulas particulares</label><label><input type="checkbox" value="Manicure / Cabeleireiro(a)"> Beleza e estética</label><label><input type="checkbox" value="Outra profissão"> Outros serviços</label></div></fieldset>
+      <div class="form-field"><label for="signup-experience">Experiência</label><input id="signup-experience" placeholder="Ex.: 8 anos de experiência"></div>
+      <div class="form-field"><label for="signup-description">Descrição profissional</label><textarea id="signup-description" rows="4" placeholder="Conte brevemente sobre seu trabalho..."></textarea></div>
+    </div>
+    <button class="btn btn-primary btn-block" id="signup-submit" type="submit">Criar conta</button>
+    <div class="form-message" id="signup-message" role="alert"></div>
+  </form>
+  <p class="auth-switch">Já tem uma conta? <a href="login.html">Entrar</a></p>
+  <p class="security-note">⚠ Os dados são armazenados somente no navegador com <code>localStorage</code> para fins de demonstração.</p>
+</div></main>
+<script src="js/app.js"></script></body></html>

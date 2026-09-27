@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d85d00"/><stop offset="1" stop-color="#f6eafb"/></linearGradient></defs>
+<rect width="800" height="700" rx="42" fill="url(#g)"/>
+<circle cx="400" cy="265" r="125" fill="#f1c7a8"/>
+<path d="M275 265c12-102 58-157 126-157 77 0 122 63 124 157-32-41-66-59-116-59-54 0-96 20-134 59z" fill="#3a2735"/>
+<circle cx="355" cy="280" r="10" fill="#342532"/><circle cx="445" cy="280" r="10" fill="#342532"/>
+<path d="M360 335c27 21 53 21 80 0" fill="none" stroke="#8e4d52" stroke-width="8" stroke-linecap="round"/>
+<path d="M235 700c10-163 77-239 165-239s155 76 165 239" fill="#d85d00"/>
+<rect x="300" y="515" width="200" height="88" rx="44" fill="rgba(255,255,255,.16)"/>
+<text x="400" y="571" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="800" fill="#fff">FR</text>
+</svg>

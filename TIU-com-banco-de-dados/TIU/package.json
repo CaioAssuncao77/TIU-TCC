@@ -1,0 +1,13 @@
+{
+  "name": "tiu",
+  "version": "2.0.0",
+  "description": "TIU — plataforma de serviços e marketplace (TCC), agora com banco de dados SQLite e API própria.",
+  "private": true,
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

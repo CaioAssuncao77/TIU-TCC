@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar | TIU</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav"><a href="index.html">Início</a><a href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a><span class="nav-divider"></span><a class="active" href="login.html">Entrar</a><a class="nav-signup btn btn-primary btn-sm" href="cadastro.html">Criar conta</a></nav>
+</div></header>
+
+<main class="auth-page"><div class="auth-card">
+  <div class="auth-heading"><span class="brand-mark large">TIU</span><span class="eyebrow">BEM-VINDO DE VOLTA</span><h1>Entrar no TIU</h1><p>Acesse sua conta para continuar.</p></div>
+  <form id="login-form" novalidate>
+    <div class="form-field"><label for="login-email">E-mail</label><input id="login-email" type="email" autocomplete="email" required placeholder="voce@email.com"></div>
+    <div class="form-field"><label for="login-password">Senha</label><input id="login-password" type="password" autocomplete="current-password" required placeholder="••••••••"></div>
+    <button class="btn btn-primary btn-block" type="submit">Entrar</button>
+    <div class="form-message" id="login-message" role="alert"></div>
+    <div class="login-help"><a href="forgot-password.html">Esqueci minha senha</a></div>
+  </form>
+  <div class="demo-box"><strong>Conta de demonstração</strong><span>E-mail: demo@tiu.com</span><span>Senha: 123456</span><button type="button" class="text-button" id="fill-demo">Preencher dados</button></div>
+  <p class="auth-switch">Ainda não tem conta? <a href="cadastro.html">Criar cadastro</a></p>
+  <p class="security-note">⚠ Esta autenticação usa <code>localStorage</code> apenas para demonstração acadêmica. Não é segura para produção.</p>
+</div></main>
+<script src="js/app.js"></script></body></html>

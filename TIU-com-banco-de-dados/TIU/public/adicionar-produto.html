@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vender produto | TIU</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="add-product">
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="index.html"><span class="brand-mark">TIU</span><span class="brand-text">TIU</span></a>
+  <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="main-nav"><a href="index.html">Início</a><a href="profissionais.html">Profissionais</a><a href="produtos.html">Marketplace</a><a href="index.html#como-funciona">Como funciona</a><span class="nav-divider"></span><a class="nav-login" href="login.html">Entrar</a><a class="nav-signup btn btn-primary btn-sm" href="cadastro.html">Criar conta</a></nav>
+</div></header>
+<main class="auth-page product-create-page"><div class="auth-card auth-card-wide product-form-card">
+  <div class="auth-heading"><span class="eyebrow">MARKETPLACE</span><h1>Anuncie um produto</h1><p>Qualquer cliente pode criar um anúncio no TIU. Preencha os dados e publique em poucos passos.</p></div>
+  <form id="product-form" novalidate>
+    <div class="form-row"><div class="form-field"><label for="product-name">Nome do produto *</label><input id="product-name" required placeholder="Ex.: Notebook Dell, bicicleta, câmera..." /></div><div class="form-field"><label for="product-price">Preço (R$) *</label><input id="product-price" type="number" min="0" step="0.01" required placeholder="0,00" /></div></div>
+    <div class="form-row"><div class="form-field"><label for="product-category">Categoria *</label><select id="product-category" required><option value="">Selecione</option><option>Celulares</option><option>Notebooks</option><option>Ferramentas</option><option>Câmeras</option><option>Consoles</option><option>Móveis</option><option>Vintage</option><option>Outros</option></select></div><div class="form-field"><label for="product-condition">Condição *</label><select id="product-condition" required><option value="">Selecione</option><option>Novo</option><option>Usado</option><option>Seminovo</option><option>Vintage</option><option>Restaurado</option></select></div></div>
+    <div class="form-row"><div class="form-field"><label for="product-seller">Vendedor</label><input id="product-seller" readonly /></div><div class="form-field"><label for="product-location">Localização *</label><input id="product-location" required placeholder="Cidade / região" /></div></div>
+    <div class="form-field"><label for="product-description">Descrição *</label><textarea id="product-description" rows="5" required placeholder="Explique o estado, detalhes e o que acompanha o produto..."></textarea></div>
+    <div class="form-field"><label for="product-image">Foto do produto</label><input id="product-image" type="file" accept="image/*"><small class="field-help">Opcional. A imagem é reduzida automaticamente para a demonstração.</small></div>
+    <button class="btn btn-primary btn-block" type="submit">Publicar anúncio</button>
+    <div class="form-message" id="product-form-message" role="alert"></div>
+  </form>
+  <p class="security-note">⚠ Os anúncios são armazenados no <code>localStorage</code> deste navegador para fins de demonstração acadêmica.</p>
+</div></main>
+<script src="js/app.js"></script></body></html>
